@@ -7,7 +7,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: P@ssword1234
       MYSQL_DATABASE: test
-      MYSQL_USER: min
+      MYSQL_USER: root
       MYSQL_PASSWORD: P@ssword1234
     volumes:
       - ./init-db:/docker-entrypoint-initdb.d
@@ -34,7 +34,7 @@ services:
     build: .
     environment:
       DB_HOST: db
-      DB_USER: min
+      DB_USER: root
       DB_PASSWORD: P@ssword1234
       DB_DATABASE: test
     ports:
